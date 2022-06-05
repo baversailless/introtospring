@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<form th:method="PUT" th:object="${task}" th:action="@{/api1.0/tasks/{id}(id=${task.getId()})}">
+    <label for="name">Enter The Task:</label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br/>
+    <br/>
+    <input type="submit" value="Update"/>
+</form>
+
+</body>
+</html>

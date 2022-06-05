@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<form method="post" action="/api1.0/tasks" th:object="${task}">
+    <label for="name">Enter The Next Task:</label>
+    <input type="text" th:field="*{name}" id="name"/>
+
+    <br/>
+    <br/>
+    <input type="submit" value="Create"/>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

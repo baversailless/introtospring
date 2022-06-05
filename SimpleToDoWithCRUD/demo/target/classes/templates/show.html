@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<p th:text="${task}"></p>
+<br/>
+<form th:action="@{/api1.0/tasks/{id}/edit(id=${task.getId()})}" method="get">
+    <input type="submit" value="UPDATE"/>
+</form>
+<br/>
+<form th:method="DELETE" th:action="@{/api1.0/tasks/{id}(id=${task.getId()})}">
+    <input type="submit" value="DELETE"/>
+</form>
+</body>
+</html>
